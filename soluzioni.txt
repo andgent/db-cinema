@@ -1,0 +1,22 @@
+1)
+SELECT * 
+FROM sale
+WHERE citta = 'Pisa'
+
+2)
+SELECT titolo
+FROM film
+WHERE regista='F. Fellini' and annoproduzione > 1960
+
+3)
+SELECT titolo, durata
+FROM film
+WHERE genere = 'fantascienza' 
+and nazionalita = 'Francia' or 'Giappone' 
+and annoproduzione > 1990 
+
+4)
+SELECT titolo
+FROM film
+WHERE (genere = 'fantascienza' and nazionalita = 'Giappone') 
+or nazionalita = Francia
